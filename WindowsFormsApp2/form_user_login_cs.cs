@@ -27,59 +27,7 @@ namespace WindowsFormsApp2
             InitializeComponent();
             connectionString = ConfigurationManager.ConnectionStrings["HastaneOtomasyonuConnectionString"].ConnectionString;
         }
-        private void ComboLoadData()
-        {
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    string query1 = "SELECT ad_soyad FROM tablo_doktorlar";
-
-                    SqlDataAdapter da1 = new SqlDataAdapter(query1, connection);
-                    DataTable dt1 = new DataTable();
-                    da1.Fill(dt1);
-
-                    cmb_doktor.DataSource = dt1;
-                    cmb_doktor.DisplayMember = "ad_soyad";
-                    cmb_doktor.ValueMember = "ad_soyad";
-
-
-                }
-
-                {
-                    string query1 = "SELECT ad_soyad FROM tablo_hastalar";
-
-                    SqlDataAdapter da1 = new SqlDataAdapter(query1, connectionString);
-                    DataTable dt1 = new DataTable();
-                    da1.Fill(dt1);
-
-                    cmb_doktor.DataSource = dt1;
-                    cmb_doktor.DisplayMember = "ad_soyad";
-                    cmb_doktor.ValueMember = "ad_soyad";
-                }
-
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    string query2 = "SELECT durum FROM tablo_randevular";
-                    SqlDataAdapter da2 = new SqlDataAdapter(query2, connection);
-                    DataTable dt2 = new DataTable();
-                    da2.Fill(dt2);
-                    cmb_durum.DataSource = dt2;
-                    cmb_durum.DisplayMember = "durum";
-                    cmb_durum.ValueMember = "durum";
-
-
-                }
-
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata = " + ex);
-
-            }
-        }
+       
 
 
 
@@ -97,16 +45,15 @@ namespace WindowsFormsApp2
                 cmb_hasta.DisplayMember = "ad_soyad";
                 cmb_hasta.ValueMember = "hasta_id";
 
-                // Doktorlar - dt2 kullanılmalı!
                 string query2 = "SELECT doktor_id, ad_soyad FROM tablo_doktorlar";
                 SqlDataAdapter da2 = new SqlDataAdapter(query2, conn);
                 DataTable dt2 = new DataTable();
                 da2.Fill(dt2);
-                cmb_doktor.DataSource = dt2;  // dt değil dt2!
+                cmb_doktor.DataSource = dt2;  
                 cmb_doktor.DisplayMember = "ad_soyad";
                 cmb_doktor.ValueMember = "doktor_id";
 
-                // Durum ComboBox - Manuel ekle
+               
                 cmb_durum.Items.Clear();
                 cmb_durum.Items.Add("Aktif");
                 cmb_durum.Items.Add("İptal");
@@ -139,11 +86,9 @@ namespace WindowsFormsApp2
 
 
 
-        //kaydet butonu//
         private void btn_save_Click(object sender, EventArgs e)
         {
 
-            // Seçim kontrolü
             if (cmb_hasta.SelectedValue == null || cmb_doktor.SelectedValue == null || cmb_durum.SelectedIndex == -1)
             {
                 MessageBox.Show("Lütfen tüm alanları doldurunuz!");
@@ -191,20 +136,19 @@ namespace WindowsFormsApp2
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    // 1. Doğru Prosedür Adı: select olanı kullanıyoruz
+              
                     using (SqlCommand cmd = new SqlCommand("sp_tablo_randevu_select", connection))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
 
-                        // 2. DataAdapter'ı cmd ile bağlıyoruz
+                     
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
                         DataTable dt = new DataTable();
 
-                        // Connection'ı açıp veriyi çekiyoruz
+                    
                         connection.Open();
                         da.Fill(dt);
 
-                        // 3. Grid'e bağlıyoruz
                         dataGridView1.DataSource = dt;
                     }
                 }
@@ -219,7 +163,6 @@ namespace WindowsFormsApp2
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            // btn_delete_Click - Parametre adını düzeltin
 
             if (dataGridView1.CurrentRow == null)
             {
@@ -239,7 +182,7 @@ namespace WindowsFormsApp2
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
 
-                        // @ID yerine @randevu_id kullanın
+                      
                         cmd.Parameters.AddWithValue("@randevu_id", selectedRowId);
 
                         connection.Open();
@@ -263,13 +206,12 @@ namespace WindowsFormsApp2
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    // Verileri çekmek için gereken sorgu
+                
                     string query = "SELECT * FROM tablo_randevular";
                     SqlDataAdapter da = new SqlDataAdapter(query, connection);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
-                    // Verileri DataGridView'e bağla
                     dataGridView1.DataSource = dt;
                 }
             }
@@ -319,41 +261,6 @@ namespace WindowsFormsApp2
 
 
 
-
-        private void DoktorlariGetir()
-        {
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                SqlDataAdapter da = new SqlDataAdapter(
-                    "SELECT doktor_id, ad_soyad FROM tablo_doktorlar", con);
-
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                cmb_doktor.DataSource = dt;
-                cmb_doktor.DisplayMember = "DOKTOR";
-                cmb_doktor.ValueMember = "doktor_id";
-                cmb_doktor.SelectedIndex = -1;
-            }
-        }
-
-        void DurumlariGetir()
-        {
-
-            DataTable dt = new DataTable();
-            dt.Columns.Add("durum_id", typeof(int));
-            dt.Columns.Add("DURUM", typeof(string));
-
-            dt.Rows.Add( "Aktif");
-            dt.Rows.Add( "Pasif");
-            dt.Rows.Add("Tamamlandı");
-            dt.Rows.Add( "Tamamlandı");
-
-            cmb_durum.DataSource = dt;
-            cmb_durum.DisplayMember = "DURUM";
-            cmb_durum.ValueMember = "durum";
-            cmb_durum.SelectedIndex = -1;
-        }
 
 
 

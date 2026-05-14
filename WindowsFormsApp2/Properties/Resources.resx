@@ -121,20 +121,26 @@
   <data name="566w-wiQfsVb315s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\566w-wiQfsVb315s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tirol" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tirol.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Başlıksız" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Başlıksız.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="800w-TdL0RHl8HDk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\800w-TdL0RHl8HDk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="450w-315cWw_HsBI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\450w-315cWw_HsBI1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Başlıksız" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Başlıksız.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="instituto cardiosalud las flores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\instituto cardiosalud las flores.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="450w-kllJo9ZOgAU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\450w-kllJo9ZOgAU.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="800w-TdL0RHl8HDk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\800w-TdL0RHl8HDk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tirol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tirol.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="أريد أن يكون هذا ممتع لكم" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\أريد أن يكون هذا ممتع لكم.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="450w-315cWw_HsBI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\450w-315cWw_HsBI.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,7 +148,7 @@
   <data name="800w-SnYrjT2F9T0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\800w-SnYrjT2F9T0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="أريد أن يكون هذا ممتع لكم" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\أريد أن يكون هذا ممتع لكم.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ekran görüntüsü 2025-12-24 175317" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ekran görüntüsü 2025-12-24 175317.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

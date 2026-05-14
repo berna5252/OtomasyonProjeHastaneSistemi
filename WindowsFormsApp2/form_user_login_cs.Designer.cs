@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_user_login_cs));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,41 +51,48 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(49, 240);
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 228);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 16);
+            this.label1.Size = new System.Drawing.Size(190, 25);
             this.label1.TabIndex = 19;
             this.label1.Text = "HASTA AD SOYAD";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(49, 349);
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(12, 341);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 16);
+            this.label2.Size = new System.Drawing.Size(207, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "DOKTOR AD SOYAD";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(47, 406);
+            this.label3.BackColor = System.Drawing.Color.Black;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(12, 400);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 16);
+            this.label3.Size = new System.Drawing.Size(177, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "RANDEVU TARİHİ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(47, 464);
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(12, 456);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 16);
+            this.label4.Size = new System.Drawing.Size(199, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "RANDEVU DURUMU";
             // 
@@ -105,8 +113,8 @@
             // 
             // btn_save
             // 
-            this.btn_save.BackColor = System.Drawing.Color.Ivory;
-            this.btn_save.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_save.BackColor = System.Drawing.Color.Black;
+            this.btn_save.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_save.Location = new System.Drawing.Point(493, 240);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(192, 40);
@@ -117,17 +125,20 @@
             // 
             // btn_select
             // 
+            this.btn_select.BackColor = System.Drawing.Color.Black;
+            this.btn_select.ForeColor = System.Drawing.Color.White;
             this.btn_select.Location = new System.Drawing.Point(768, 240);
             this.btn_select.Name = "btn_select";
             this.btn_select.Size = new System.Drawing.Size(216, 37);
             this.btn_select.TabIndex = 10;
             this.btn_select.Text = "LİSTELE";
-            this.btn_select.UseVisualStyleBackColor = true;
+            this.btn_select.UseVisualStyleBackColor = false;
             this.btn_select.Click += new System.EventHandler(this.btn_select_Click);
             // 
             // btn_delete
             // 
-            this.btn_delete.BackColor = System.Drawing.Color.Beige;
+            this.btn_delete.BackColor = System.Drawing.Color.Black;
+            this.btn_delete.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_delete.Location = new System.Drawing.Point(493, 358);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(192, 40);
@@ -138,23 +149,25 @@
             // 
             // btn_starting_update
             // 
+            this.btn_starting_update.BackColor = System.Drawing.Color.Black;
+            this.btn_starting_update.ForeColor = System.Drawing.Color.White;
             this.btn_starting_update.Location = new System.Drawing.Point(782, 358);
             this.btn_starting_update.Name = "btn_starting_update";
             this.btn_starting_update.Size = new System.Drawing.Size(202, 40);
             this.btn_starting_update.TabIndex = 12;
             this.btn_starting_update.Text = "GÜNCELLEME BAŞLAT";
-            this.btn_starting_update.UseVisualStyleBackColor = true;
+            this.btn_starting_update.UseVisualStyleBackColor = false;
             this.btn_starting_update.Click += new System.EventHandler(this.btn_starting_update_Click);
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Black;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 1);
+            this.dataGridView1.Location = new System.Drawing.Point(5, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1302, 205);
+            this.dataGridView1.Size = new System.Drawing.Size(1314, 182);
             this.dataGridView1.TabIndex = 13;
             // 
             // cmb_durum
@@ -168,10 +181,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Navy;
-            this.label5.Location = new System.Drawing.Point(49, 294);
+            this.label5.BackColor = System.Drawing.Color.Black;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(12, 285);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 16);
+            this.label5.Size = new System.Drawing.Size(119, 25);
             this.label5.TabIndex = 15;
             this.label5.Text = "HASTA T.C";
             // 
@@ -192,12 +207,14 @@
             // 
             // btn_update
             // 
+            this.btn_update.BackColor = System.Drawing.Color.Black;
+            this.btn_update.ForeColor = System.Drawing.Color.White;
             this.btn_update.Location = new System.Drawing.Point(1054, 288);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(196, 47);
             this.btn_update.TabIndex = 18;
             this.btn_update.Text = "GÜNCELLE";
-            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.UseVisualStyleBackColor = false;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // form_user_login_cs
@@ -205,6 +222,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1314, 540);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.cmb_hasta);
@@ -222,6 +240,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "form_user_login_cs";
             this.Text = "form_user_login_cs";
             this.Load += new System.EventHandler(this.form_user_login_cs_Load);

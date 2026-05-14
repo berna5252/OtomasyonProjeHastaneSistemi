@@ -133,6 +133,26 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ekran_görüntüsü_2025_12_24_175317 {
+            get {
+                object obj = ResourceManager.GetObject("Ekran görüntüsü 2025-12-24 175317", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap instituto_cardiosalud_las_flores {
+            get {
+                object obj = ResourceManager.GetObject("instituto cardiosalud las flores", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tirol {
             get {
                 object obj = ResourceManager.GetObject("Tirol", resourceCulture);

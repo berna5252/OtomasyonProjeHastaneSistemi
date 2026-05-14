@@ -138,5 +138,11 @@
   <ItemGroup>
     <None Include="Resources\أريد أن يكون هذا ممتع لكم.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instituto cardiosalud las flores.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2025-12-24 175317.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
